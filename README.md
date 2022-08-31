@@ -64,6 +64,8 @@ _Barbaric_ does its best to work out of the box with zero configuration.
 To change its default behavior, modify the lines below and add them to your `.vimrc`. 
 
 ```viml
+let g:barbaric_switchback = 1
+
 " The IME to invoke for managing input languages (macos, fcitx, ibus, xkb-switch)
 let g:barbaric_ime = 'fcitx'
 
