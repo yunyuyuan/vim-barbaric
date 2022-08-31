@@ -8,7 +8,7 @@ function! barbaric#switch(next_mode)
     call s:record_im()
     call s:restore_normal_im()
     call s:set_timeout()
-  elseif a:next_mode == 'insert'
+  elseif a:next_mode == 'insert' && !exists('g:barbaric_switchback')
     call s:check_timeout()
     call s:restore_insert_im()
   endif
